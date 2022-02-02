@@ -1,0 +1,84 @@
+country_decisions = {
+	debug_education_add_heir_age_15 = {
+		potential = {
+			ai = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			define_heir = {
+				age = 15
+			}
+		}
+	}
+	debug_education_add_heir_age_7 = {
+		potential = {
+			ai = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			define_heir = {
+				age = 7
+			}
+		}
+	}
+	debug_set_education_100 = {
+		potential = {
+			ai = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_variable = {
+				which = heirEducationalLevel
+				value = 100
+			}
+		}
+	}
+	debug_set_education_65 = {
+		potential = {
+			ai = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_variable = {
+				which = heirEducationalLevel
+				value = 65
+			}
+		}
+	}
+	debug_set_education_45 = {
+		potential = {
+			ai = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_variable = {
+				which = heirEducationalLevel
+				value = 45
+			}
+		}
+	}
+	debug_set_education_25 = {
+		potential = {
+			ai = no
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_variable = {
+				which = heirEducationalLevel
+				value = 25
+			}
+		}
+	}
+}

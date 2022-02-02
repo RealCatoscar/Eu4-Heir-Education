@@ -1,0 +1,48 @@
+#AVIALABLE CUSTOM LOCALISATION KEYS
+#When adding new custom loc keys, add them to the appropriate category (or add a new one) and describe them. Name the strings "String_X" where x is its content.
+# To not display anything, you can use 'localisation_key = ""'
+# Please add one example sentence for each key.
+
+#As this list grow organize with categories.
+#Current loc keys in this file:
+#GetTributaryOverlord
+#GetOldEra
+#GetLocalPowerStructure
+#GetGovernmentSupporters
+#GetNoblesReplacementForOtherGovernments
+
+
+#Ex: "Visiting the [GetNameReligiousBuilding]"
+defined_text = {
+    name = GetNameReligiousBuilding
+
+    text = {
+        localisation_key = string_christian_religion_building
+        trigger = {
+			religion_group = christian
+        }
+    }
+    text = {
+        localisation_key = string_muslim_religion_building
+        trigger = {
+			religion_group = muslim
+        }
+    }
+	text = {
+        localisation_key = string_muslim_religion_building
+        trigger = {
+			religion_group = jewish_group
+        }
+    }	
+	text = {
+        localisation_key = string_other_religion_building
+        trigger = {
+			NOT = {
+				OR = {
+					religion_group = christian
+					religion_group = muslim
+				}
+			}
+        }
+	}
+}
