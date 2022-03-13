@@ -359,6 +359,83 @@ country_event = {
 		ai_chance = { factor = 1 }
 	}
 	option = {
+		name = cato_education_events_education_progress.2003.title
+		trigger = {
+			has_heir_flag = administrative_education
+		}
+		country_event = { id = cato_education_events_education_progress.2003 }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = cato_education_events_education_progress.2006.title
+		trigger = {
+			has_heir_flag = administrative_education
+			NOT = { heir_has_personality = midas_touched_personality }
+			NOT = { heir_has_personality = greedy_personality }
+		}
+		country_event = { id = cato_education_events_education_progress.2006 }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = cato_education_events_education_progress.2007.title
+		trigger = {
+			has_heir_flag = administrative_education
+			NOT = { heir_has_personality = midas_touched_personality }
+			NOT = { heir_has_personality = greedy_personality }
+		}
+		country_event = { id = cato_education_events_education_progress.2007 }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = cato_education_events_education_progress.2008.title
+		trigger = {
+			has_heir_flag = administrative_education
+			NOT = { heir_has_personality = lawgiver_personality }
+		}
+		country_event = { id = cato_education_events_education_progress.2008 }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = cato_education_events_education_progress.2009.title
+		trigger = {
+			has_heir_flag = administrative_education
+			NOT = { has_country_modifier = HE_administrative_global_tax_boost }
+			NOT = { has_country_modifier = HE_administrative_global_tax_malus }
+		}
+		country_event = { id = cato_education_events_education_progress.2009 }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = cato_education_events_education_progress.2010.title
+		trigger = {
+			has_heir_flag = administrative_education
+			NOT = { has_country_modifier = HE_administrative_global_tax_boost }
+			NOT = { has_country_modifier = HE_administrative_global_tax_malus }
+		}
+		country_event = { id = cato_education_events_education_progress.2010 }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = cato_education_events_education_progress.2011.title
+		trigger = {
+			has_heir_flag = administrative_education
+			NOT = { has_country_modifier = HE_efficient_state_management }
+			NOT = { has_country_modifier = HE_inefficient_state_management }
+		}
+		country_event = { id = cato_education_events_education_progress.2011 }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = cato_education_events_education_progress.2012.title
+		trigger = {
+			has_heir_flag = administrative_education
+			NOT = { has_country_modifier = HE_efficient_state_management }
+			NOT = { has_country_modifier = HE_inefficient_state_management }
+		}
+		country_event = { id = cato_education_events_education_progress.2012 }
+		ai_chance = { factor = 1 }
+	}
+	option = {
 		name = cato_education_events_education_progress.3000.title
 		trigger = {
 			has_heir_flag = scholastic_education
@@ -3010,7 +3087,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1014.b ###Suggest Minor Changes
+		name = cato_education_events_education_progress.2003.b ###Suggest Minor Changes
 		if = {
 			limit = {
 				check_variable = {
@@ -3242,7 +3319,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.2005.a
+		name = cato_education_events_education_progress.2005.b
 		trigger = {
 			has_heir_flag = HE_capital_tax_malus
 		}
@@ -3280,7 +3357,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = cato_education_events_education_progress.2007 ###Heir Becomes Tolerant
+	id = cato_education_events_education_progress.2007 ###Heir Becomes Greedy
 	title = cato_education_events_education_progress.2007.title
 	desc = cato_education_events_education_progress.2007.desc
 	picture = ECONOMY_eventPicture
@@ -3389,9 +3466,9 @@ country_event = {
 	}
 }
 country_event = {
-	id = cato_education_events_education_progress.2011 ###Decrease governing capacity and reduce state maintenance cost
-	title = cato_education_events_education_progress.2011.title
-	desc = cato_education_events_education_progress.2011.desc
+	id = cato_education_events_education_progress.2012 ###Decrease governing capacity and reduce state maintenance cost
+	title = cato_education_events_education_progress.2012.title
+	desc = cato_education_events_education_progress.2012.desc
 	picture = ECONOMY_eventPicture
 	
 	is_triggered_only = yes
@@ -3400,7 +3477,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.2011.a
+		name = cato_education_events_education_progress.2012.a
 		add_country_modifier = {
 			name = HE_inefficient_state_management
 			duration = 1825
@@ -3715,6 +3792,8 @@ country_event = {
 			has_idea_group = defensive_ideas
 			has_idea_group = aristocracy_ideas
 			has_idea_group = plutocracy_ideas
+			has_idea_group = horde_gov_ideas
+			has_idea_group = theocracy_gov_ideas
 		}
 	}
 	
@@ -3848,6 +3927,8 @@ country_event = {
 			has_idea_group = aristocracy_ideas
 			has_idea_group = plutocracy_ideas
 			has_idea_group = exploration_ideas
+			has_idea_group = horde_gov_ideas
+			has_idea_group = theocracy_gov_ideas
 		}
 	}
 	
