@@ -304,3 +304,7 @@ HE_inefficient_state_management = {
 	state_maintenance_modifier = 0.2
 	governing_capacity_modifier = -0.2
 }
+HE_administrative_looking_to_the_past = {
+	idea_cost = -0.1
+	adm_tech_cost_modifier = -0.1
+}
