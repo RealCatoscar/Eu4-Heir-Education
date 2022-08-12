@@ -12,17 +12,7 @@ country_event = {
 	trigger = {
 		has_heir = yes
 		is_lesser_in_union = no
-		NOT = {
-		    OR = {
-				has_heir_flag = in_education_excellent
-				has_heir_flag = in_education_good
-				has_heir_flag = in_education_average
-				has_heir_flag = in_education_but_not_learning
-				has_heir_flag = heir_is_a_genius
-				has_heir_flag = heir_has_been_prompted
-				government = theocracy
-			}
-		}
+		government_does_not_use_hereditary_heir = no
 	}
 	immediate = {
 		hidden_effect = {
@@ -780,7 +770,7 @@ country_event = {
 					flag = heir_started_education
 					days = 2920###2920 8 years
 				}
-				heir_not_busy = yes
+				heir_available = yes
 			}
 			has_ruler_flag = heir_started_education
 		}
@@ -1184,6 +1174,7 @@ country_event = {
 			}
 			set_heir_flag = heir_finished_education
 			clr_heir_flag = heir_started_education
+			clear_country_education_quality_flags = yes
 		}
 		else_if = { ###Now for those whose education ended because they ascended the throne.
 			limit = {
@@ -1525,10 +1516,7 @@ country_event = {
 				}
 				set_ruler_flag = best_modern_army_education
 			}
-			clr_country_flag = poor_education
-			clr_country_flag = okay_education
-			clr_country_flag = good_education
-			clr_country_flag = best_education
+			clear_country_education_quality_flags = yes
             set_ruler_flag = heir_finished_education
             clr_ruler_flag = heir_started_education
 		}

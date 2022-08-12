@@ -180,6 +180,18 @@ country_event = {
 				has_idea_group = maritime_ideas
 			}
 			modifier = {
+				factor = 1.2
+				has_idea_group = horde_gov_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = theocracy_gov_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = indigenous_ideas
+			}
+			modifier = {
 				factor = 3
 				faction_in_power = mr_aristocrats
 			}
@@ -477,7 +489,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.75 ###Corruption follows the same idea, but with opposite affects (low corruption means smarter rulers on average, high corruption does opposite)
-				corruption = 2,5
+				corruption = 2.5
 				NOT = {
 					corruption = 10
 				}
@@ -567,7 +579,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.75 ###Corruption follows the same idea, but with opposite affects (low corruption means smarter rulers on average, high corruption does opposite)
-				corruption = 2,5
+				corruption = 2.5
 				NOT = {
 					corruption = 10
 				}
@@ -657,7 +669,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.5 ###Corruption follows the same idea, but with opposite affects (low corruption means smarter rulers on average, high corruption does opposite)
-				corruption = 2,5
+				corruption = 2.5
 				NOT = {
 					corruption = 10
 				}
@@ -813,7 +825,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.5 ###Corruption follows the same idea, but with opposite affects (low corruption means smarter rulers on average, high corruption does opposite)
-				corruption = 2,5
+				corruption = 2.5
 				NOT = {
 					corruption = 10
 				}
